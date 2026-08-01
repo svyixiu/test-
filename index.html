@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Executor Environment — sUNC &amp; Potassium reference</title>
+<meta name="description" content="Learn the Luau executor environment: what every function does, why it exists, and whether it is part of the sUNC standard, Potassium, or both.">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <a class="brand" href="#/">
+    <span class="brand-mark">sUNC</span><span class="brand-x">&times;</span><span class="brand-mark alt">PTS</span>
+    <span class="brand-sub">executor environment reference</span>
+  </a>
+
+  <div class="searchwrap">
+    <input id="search" type="search" autocomplete="off" spellcheck="false"
+           placeholder="Search 202 functions&hellip;  press /" aria-label="Search functions">
+    <div id="results" class="results" role="listbox" hidden></div>
+  </div>
+
+  <button id="navtoggle" class="navtoggle" aria-expanded="false" aria-controls="sidebar">Menu</button>
+</header>
+
+<div class="shell">
+  <nav id="sidebar" class="sidebar" aria-label="Library navigation">
+    <section class="filters">
+      <p class="eyebrow">Availability</p>
+      <label class="filter"><input type="checkbox" data-avail="both" checked><span class="dot both"></span>In both</label>
+      <label class="filter"><input type="checkbox" data-avail="sunc-only" checked><span class="dot sunc"></span>sUNC only</label>
+      <label class="filter"><input type="checkbox" data-avail="potassium-only" checked><span class="dot pts"></span>Potassium only</label>
+    </section>
+
+    <section>
+      <p class="eyebrow">Start here</p>
+      <ul id="conceptnav" class="navlist"></ul>
+    </section>
+
+    <section>
+      <p class="eyebrow">Libraries</p>
+      <ul id="libnav" class="navlist"></ul>
+    </section>
+  </nav>
+
+  <main id="main" class="main" tabindex="-1"></main>
+</div>
+
+<footer class="foot">
+  <p>Compiled from the <a href="https://docs.sunc.su/api/" rel="noreferrer">sUNC metadata API</a> and the
+     <a href="https://docs.potassium.pro/api-reference/introduction" rel="noreferrer">Potassium API reference</a>.
+     Signatures come from sUNC where it tests the function. Explanations and examples are written for this site.</p>
+  <p class="dim">Documents what the environment exposes and why. Not a script repository.</p>
+</footer>
+
+<script src="data/api.js"></script>
+<script src="js/highlight.js"></script>
+<script src="js/search.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
